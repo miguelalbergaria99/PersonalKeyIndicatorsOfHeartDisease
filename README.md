@@ -2,11 +2,8 @@
 
 This repository contains a example of a project based on [Kaggle's Personal Key Indicators of Heart Disease](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease).
 
-# Repository structure #
+# Repository structure and contents#
 
-**Dataset (folder):**
-* CSV file with the dataset (download from [Kaggle](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease)).
-  
 **Models (folder):**
 * Notebook for the pre-processing of the dataset and training and evaluation of the models.
 * Pickle file of the saved models, encoders and scalers (Run notebook to generate necessary pickle files).
