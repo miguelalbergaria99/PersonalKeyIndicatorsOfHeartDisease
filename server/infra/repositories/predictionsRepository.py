@@ -15,14 +15,14 @@ class PredictionsRepository():
                             skin_cancer=row[17], heart_disease=row[18])
 
 
-    def __get_products(self, query):
+    def __get_health_records(self, query):
         self.__cursor.execute(query)
 
-        products = []
+        health_records = []
         for row in self.__cursor:
-            products.append(self.__db_health_record_to_object(row))
+            health_records.append(self.__db_health_record_to_object(row))
 
-        return products
+        return health_records
 
 
     def add_health_record(self, health_record: HealthRecord):
@@ -50,4 +50,4 @@ class PredictionsRepository():
     def get_all_health_records(self):
         query = "SELECT * FROM HealthRecord"
 
-        return self.__get_products(query)
+        return self.__get_health_records(query)
